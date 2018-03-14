@@ -8,8 +8,11 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/index.js",
     "prestart": "yarn run compile",
-    "compile": "tsc"
+    "compile": "tsc --watch"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
   }
 }

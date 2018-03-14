@@ -1,3 +1,3 @@
-# Typescript Magic
+# Typescript Blockchain
 
-Learning Typescript by Example
+Making a blockchain with Typescript
