@@ -1,11 +1,21 @@
-const name: string = "Nicolás",
-  age: number = 24,
-  gender: string = "male";
+interface Human {
+  name: string;
+  age: number;
+  gender: string;
+}
 
-const describe = (name: string, age: number, gender: string): string => {
-  return `The name is ${name}, the age is ${age} and he is a ${gender}`;
+const lynn = {
+  name: "Lynn",
+  age: 30,
+  gender: "Female"
 };
 
-describe(name, age, gender);
+const describe = (human: Human): string => {
+  return `The name is ${human.name}, the age is ${
+    human.age
+  } and the gender is ${human.gender}`;
+};
+
+console.log(describe(lynn));
 
 export {};
