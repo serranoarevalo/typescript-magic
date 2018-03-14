@@ -1,0 +1,10 @@
+{
+  "name": "typescript-mastery",
+  "version": "1.0.0",
+  "description": "Learning Typescript by Example",
+  "main": "index.js",
+  "repository": "https://github.com/serranoarevalo/typescript-magic",
+  "author": "Nicolás Serrano Arévalo <itnico.las.me@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
