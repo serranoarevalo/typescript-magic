@@ -10,10 +10,10 @@ class Block {
     CryptoJS.SHA256(index + previousHash + timestamp + data).toString();
 
   public static validateStructure = (aBlock: Block): boolean =>
-    typeof aBlock.index === "string" &&
+    typeof aBlock.index === "number" &&
     typeof aBlock.hash === "string" &&
     typeof aBlock.previousHash === "string" &&
-    typeof aBlock.timestamp === "string" &&
+    typeof aBlock.timestamp === "number" &&
     typeof aBlock.data === "string";
 
   public index: number;
@@ -64,6 +64,7 @@ const createNewBlock = (data: string): Block => {
     nextTimestamp,
     data
   );
+  addBlock(newBlock);
   return newBlock;
 };
 
@@ -80,6 +81,7 @@ const isNewBlockValid = (
   previousBlock: Block
 ): boolean => {
   if (!Block.validateStructure(candidateBlock)) {
+    console.log("lalala");
     return false;
   } else if (previousBlock.index + 1 !== candidateBlock.index) {
     return false;
@@ -97,3 +99,7 @@ const addBlock = (candidateBlock: Block): void => {
     blockchain.push(candidateBlock);
   }
 };
+
+createNewBlock("suuup");
+
+console.log(getBlockchain());
