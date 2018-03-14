@@ -1,12 +1,12 @@
 interface Human {
   name: string;
-  age: number;
+  age?: number;
   gender: string;
 }
 
 const lynn = {
   name: "Lynn",
-  age: 30,
+  //age: 30,
   gender: "Female"
 };
 

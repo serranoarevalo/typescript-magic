@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const lynn = {
     name: "Lynn",
-    age: 30,
+    //age: 30,
     gender: "Female"
 };
 const describe = (human) => {
